@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek TailwindCSS</title>
+    <!-- Impor file CSS yang dihasilkan oleh TailwindCSS -->
+    <link href="../dist/output.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between p-4 bg-gray-800 text-white">
+        <div class="logo font-bold">Logo</div>
+        <ul class="flex space-x-4">
+            <li><a href="#" class="hover:text-gray-400">Home</a></li>
+            <li><a href="#" class="hover:text-gray-400">About</a></li>
+            <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-64" style="background-image: url('hero.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative text-center text-white p-8">
+            <h2 class="text-4xl font-bold">Welcome to Our Website</h2>
+        </div>
+    </section>
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white text-center py-4">
+        <h1 class="text-3xl">Website Title</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="p-4">
+        <section class="w-full grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div class="col-span-1">
+                <img src="image.jpg" alt="Image" class="w-full h-auto">
+            </div>
+            <div class="col-span-2">
+                <p>Halo nama gw Adli Fathi Rayhan, orang sering bilang gw mirip Jefri Nichol dan gw termasuk kedalam kategori orang</p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <article class="bg-gray-100 p-4">Content 1</article>
+            <article class="bg-gray-100 p-4">Content 2</article>
+            <article class="bg-gray-100 p-4">Content 3</article>
+        </section>
+    </main>
+
+    <!-- Button -->
+    <div class="text-center my-8">
+        <button class="bg-blue-400 text-white py-2 px-4 rounded hover:bg-blue-500">
+            Click Me
+        </button>
+    </div>
+
+</body>
+</html>
